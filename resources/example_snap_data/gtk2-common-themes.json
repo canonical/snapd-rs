@@ -1,0 +1,30 @@
+{
+  "id": "QTTvBfEDSFw9OAOmdhHWdYh0BNNgz3BU",
+  "title": "GTK2 Common Themes",
+  "summary": "All the (common) GTK 2 themes",
+  "description": "A snap that exports the GTK 2.x themes used on various Linux distros.\n",
+  "installed-size": 143360,
+  "install-date": "2024-04-27T16:47:37.326362+01:00",
+  "name": "gtk2-common-themes",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "version": "0.1",
+  "channel": "stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "13",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/gtk2-common-themes_13.snap",
+  "links": null,
+  "contact": ""
+}

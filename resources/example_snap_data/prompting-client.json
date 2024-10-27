@@ -1,0 +1,54 @@
+{
+  "id": "",
+  "title": "Prompting Client",
+  "summary": "Prompting Client",
+  "description": "The prompting user interface for snap apparmor prompting",
+  "installed-size": 1731272704,
+  "install-date": "2024-10-01T12:52:39.260572571+01:00",
+  "name": "prompting-client",
+  "developer": "",
+  "status": "active",
+  "type": "app",
+  "base": "core24",
+  "version": "0+git.6d3a37b-dirty",
+  "channel": "",
+  "ignore-validation": false,
+  "revision": "x1",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "prompting-client",
+      "name": "daemon",
+      "desktop-file": "/var/lib/snapd/desktop/applications/prompting-client_daemon.desktop",
+      "daemon": "simple",
+      "daemon-scope": "user",
+      "enabled": true
+    },
+    {
+      "snap": "prompting-client",
+      "name": "echo"
+    },
+    {
+      "snap": "prompting-client",
+      "name": "logging-level"
+    },
+    {
+      "snap": "prompting-client",
+      "name": "scripted"
+    }
+  ],
+  "license": "GPL-3.0",
+  "mounted-from": "/var/lib/snapd/snaps/prompting-client_x1.snap",
+  "links": {
+    "issues": [
+      "https://github.com/canonical/prompting-client/issues"
+    ],
+    "source-code": [
+      "https://github.com/canonical/prompting-client.git"
+    ]
+  },
+  "contact": ""
+}

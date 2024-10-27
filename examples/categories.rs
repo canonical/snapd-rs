@@ -1,4 +1,4 @@
-use snapd_rs::{SnapdClient, Result};
+use snapd_rs::{Result, SnapdClient};
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -11,4 +11,3 @@ async fn main() -> Result<()> {
 
     Ok(())
 }
-

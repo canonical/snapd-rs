@@ -1,0 +1,68 @@
+{
+  "id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk",
+  "title": "firefox",
+  "summary": "Mozilla Firefox web browser",
+  "description": "Firefox is a powerful, extensible web browser with support for modern web application technologies.",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2021/12/firefox_logo.png",
+  "installed-size": 284557312,
+  "install-date": "2024-09-18T09:02:39.131322541+01:00",
+  "name": "firefox",
+  "publisher": {
+    "id": "OgeoZuqQpVvSr9eGKJzNCrFGSaKXpkey",
+    "username": "mozilla",
+    "display-name": "Mozilla",
+    "validation": "verified"
+  },
+  "developer": "mozilla",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "130.0.1-1",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "4955",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "firefox",
+      "name": "firefox",
+      "desktop-file": "/var/lib/snapd/desktop/applications/firefox_firefox.desktop"
+    },
+    {
+      "snap": "firefox",
+      "name": "geckodriver"
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/firefox_4955.snap",
+  "links": {
+    "contact": [
+      "https://support.mozilla.org/kb/file-bug-report-or-feature-request-mozilla"
+    ],
+    "website": [
+      "https://www.mozilla.org/firefox/"
+    ]
+  },
+  "contact": "https://support.mozilla.org/kb/file-bug-report-or-feature-request-mozilla",
+  "website": "https://www.mozilla.org/firefox/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2021/12/firefox_logo.png",
+      "width": 196,
+      "height": 196
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2021/09/Screenshot_from_2021-09-30_08-01-50.png",
+      "width": 1850,
+      "height": 1415
+    }
+  ],
+  "refresh-inhibit": {
+    "proceed-time": "2024-10-28T14:59:54.325506104Z"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "m1eQacDdXCthEwWQrESei3Zao3d5gfJF",
+  "title": "CUPS",
+  "summary": "The CUPS Snap - The Printing Stack for Linux",
+  "description": "The official Snap of CUPS, the standard printing environment for Linux operating systems",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2020/06/openprinting-logo-with-text.png",
+  "installed-size": 71049216,
+  "install-date": "2024-06-28T14:57:44.599544253+01:00",
+  "name": "cups",
+  "publisher": {
+    "id": "LTqT2FzRuRSUbVW5H27OpuWIyFs3EUKl",
+    "username": "openprinting",
+    "display-name": "OpenPrinting",
+    "validation": "verified"
+  },
+  "developer": "openprinting",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "2.4.10-1",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "1058",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "cups",
+      "name": "accept"
+    },
+    {
+      "snap": "cups",
+      "name": "cancel"
+    },
+    {
+      "snap": "cups",
+      "name": "cups-browsed",
+      "daemon": "simple",
+      "daemon-scope": "system",
+      "enabled": true,
+      "active": true
+    },
+    {
+      "snap": "cups",
+      "name": "cupsaccept"
+    },
+    {
+      "snap": "cups",
+      "name": "cupsctl"
+    },
+    {
+      "snap": "cups",
+      "name": "cupsd",
+      "daemon": "simple",
+      "daemon-scope": "system",
+      "enabled": true,
+      "active": true
+    },
+    {
+      "snap": "cups",
+      "name": "cupsdisable"
+    },
+    {
+      "snap": "cups",
+      "name": "cupsenable"
+    },
+    {
+      "snap": "cups",
+      "name": "cupsfilter"
+    },
+    {
+      "snap": "cups",
+      "name": "cupsreject"
+    },
+    {
+      "snap": "cups",
+      "name": "cupstestppd"
+    },
+    {
+      "snap": "cups",
+      "name": "driverless"
+    },
+    {
+      "snap": "cups",
+      "name": "gs"
+    },
+    {
+      "snap": "cups",
+      "name": "ippeveprinter"
+    },
+    {
+      "snap": "cups",
+      "name": "ippfind"
+    },
+    {
+      "snap": "cups",
+      "name": "ipptool"
+    },
+    {
+      "snap": "cups",
+      "name": "lp"
+    },
+    {
+      "snap": "cups",
+      "name": "lpadmin"
+    },
+    {
+      "snap": "cups",
+      "name": "lpc"
+    },
+    {
+      "snap": "cups",
+      "name": "lpinfo"
+    },
+    {
+      "snap": "cups",
+      "name": "lpoptions"
+    },
+    {
+      "snap": "cups",
+      "name": "lpq"
+    },
+    {
+      "snap": "cups",
+      "name": "lpr"
+    },
+    {
+      "snap": "cups",
+      "name": "lprm"
+    },
+    {
+      "snap": "cups",
+      "name": "lpstat"
+    },
+    {
+      "snap": "cups",
+      "name": "reject"
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/cups_1058.snap",
+  "links": {
+    "contact": [
+      "mailto:webmaster@openprinting.org"
+    ],
+    "website": [
+      "http://www.openprinting.org/"
+    ]
+  },
+  "contact": "mailto:webmaster@openprinting.org",
+  "website": "http://www.openprinting.org/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/06/openprinting-logo-with-text.png",
+      "width": 400,
+      "height": 400
+    }
+  ]
+}

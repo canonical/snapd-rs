@@ -1,0 +1,73 @@
+{
+  "id": "k1Ml1O9GzSO2QftV0ZlWSbUfQ78nN460",
+  "title": "thunderbird",
+  "summary": "Mozilla Thunderbird email application",
+  "description": "Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/thunderbird.png",
+  "installed-size": 157155328,
+  "install-date": "2024-10-11T17:17:13.460996094+01:00",
+  "name": "thunderbird",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "128.3.1esr-1",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "532",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "thunderbird",
+      "name": "thunderbird",
+      "desktop-file": "/var/lib/snapd/desktop/applications/thunderbird_thunderbird.desktop"
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/thunderbird_532.snap",
+  "links": {
+    "contact": [
+      "https://www.thunderbird.net/contact/"
+    ],
+    "donations": [
+      "https://www.thunderbird.net/donate/"
+    ],
+    "issues": [
+      "https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird&op_sys=Linux&keywords=snap"
+    ],
+    "website": [
+      "https://www.thunderbird.net/"
+    ]
+  },
+  "contact": "https://www.thunderbird.net/contact/",
+  "website": "https://www.thunderbird.net/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/thunderbird.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/07/128_-_Dark2x-1721080472.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/07/128_-_Light2x-1721080472.png",
+      "width": 3840,
+      "height": 2160
+    }
+  ]
+}

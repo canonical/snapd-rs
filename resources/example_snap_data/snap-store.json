@@ -1,0 +1,80 @@
+{
+  "id": "gjf3IPXoRiipCu9K0kVu52f0H56fIksg",
+  "title": "Snap Store",
+  "summary": "Snap Store is a graphical desktop application for discovering, installing and managing snaps on Linux.",
+  "description": "Snap Store showcases featured and popular applications with useful descriptions, ratings, reviews and screenshots.\n\n\nApplications can be found either through browsing categories\nor by searching.\n\n\nSnap Store can also be used to switch channels, view and alter snap permissions and view and submit reviews and ratings.\n\n\nSnap Store is based on GNOME Software, optimized for the Snap experience.",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/08/App-Center.svg.png",
+  "installed-size": 11186176,
+  "install-date": "2024-10-01T15:37:35.512292226+01:00",
+  "name": "snap-store",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0+git.4fcd62b7",
+  "channel": "2/stable/ubuntu-24.04",
+  "tracking-channel": "2/stable/ubuntu-24.04",
+  "ignore-validation": false,
+  "revision": "1218",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "snap-store",
+      "name": "show-updates",
+      "desktop-file": "/var/lib/snapd/desktop/applications/snap-store_show-updates.desktop"
+    },
+    {
+      "snap": "snap-store",
+      "name": "snap-store",
+      "desktop-file": "/var/lib/snapd/desktop/applications/snap-store_snap-store.desktop"
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/snap-store_1218.snap",
+  "links": {
+    "contact": [
+      "https://bugs.launchpad.net/snap-store/"
+    ]
+  },
+  "contact": "https://bugs.launchpad.net/snap-store/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/08/App-Center.svg.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/snap-store-1.png",
+      "width": 1018,
+      "height": 664
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/snap-store-2.png",
+      "width": 1018,
+      "height": 664
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/snap-store-3.png",
+      "width": 1018,
+      "height": 664
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/snap-store-4.png",
+      "width": 1018,
+      "height": 664
+    }
+  ]
+}

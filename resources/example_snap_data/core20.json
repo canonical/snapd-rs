@@ -1,0 +1,68 @@
+{
+  "id": "DLqre5XGLbDqg9jPtiAhRRjDuPVa5X1q",
+  "title": "Core 20 base snap",
+  "summary": "Snap runtime environment",
+  "description": "Base snaps are a specific type of snap that include libraries and dependencies common to many applications. They provide a consistent and reliable execution environment for the snap packages that use them.\n\nThe core20 base snap provides a runtime environment based on Ubuntu 20.04 LTS (Focal Fossa).\n\nOther Ubuntu environment base snaps include:\n-   Core 18: <https://snapcraft.io/core18>\n-   Core 22: <https://snapcraft.io/core22> \n-   Core 24: <https://snapcraft.io/core24>\n\n**Using a base snap**\n\nBase snaps are installed automatically when a snap package requires them. Only one of each type of base snap is ever installed.\n\nManually removing a base snap may affect the stability of your system.\n\n**Building snaps with core20**\n\nSnap developers can use this base in their own snaps by adding the following to the snap's snapcraft.yaml:\n\n    base: core20\n\n**Additional Information***\n\nFor more details, and guidance on using base snaps, see our documentation: <https://snapcraft.io/docs/base-snaps>",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large_Di4xmvQ.png",
+  "installed-size": 66789376,
+  "install-date": "2024-10-21T17:55:56.786467837+01:00",
+  "name": "core20",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "base",
+  "version": "20240911",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "2434",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/core20_2434.snap",
+  "links": {
+    "issues": [
+      "https://github.com/snapcore/core20/issues"
+    ],
+    "source": [
+      "https://github.com/snapcore/core20"
+    ],
+    "website": [
+      "https://snapcraft.io"
+    ]
+  },
+  "contact": "",
+  "website": "https://snapcraft.io",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large_Di4xmvQ.png",
+      "width": 498,
+      "height": 498
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-01-1718724250.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-02-1718724250.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-03-1718724250.png",
+      "width": 568,
+      "height": 932
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "TKv5Fm000l4XiUYJW9pjWHLkCPlDbIg1",
+  "title": "GNOME 3.28 runtime",
+  "summary": "Shared GNOME 3.28 runtime for Ubuntu 18.04",
+  "description": "This snap includes a GNOME 3.28 stack (the base libraries and desktop \nintegration components) and shares it through the content interface.",
+  "icon": "/v2/icons/gnome-3-28-1804/icon",
+  "installed-size": 172830720,
+  "install-date": "2024-04-27T15:32:04.594108927+01:00",
+  "name": "gnome-3-28-1804",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core18",
+  "version": "3.28.0-19-g98f9e67.98f9e67",
+  "channel": "stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "198",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/gnome-3-28-1804_198.snap",
+  "links": {
+    "contact": [
+      "https://gitlab.gnome.org/Community/Ubuntu/gnome-3-28-1804/issues"
+    ]
+  },
+  "contact": "https://gitlab.gnome.org/Community/Ubuntu/gnome-3-28-1804/issues",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/04/icon_ysMJicB.png",
+      "width": 256,
+      "height": 256
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "Ht0aUHi7ofh9Fbwh6m7jUN2pAy6kzBiu",
+  "title": "code",
+  "summary": "Code editing. Redefined.",
+  "description": "Visual Studio Code is a new choice of tool that combines the\nsimplicity of a code editor with what developers need for the core\nedit-build-debug cycle.\n",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png",
+  "installed-size": 328294400,
+  "install-date": "2024-10-10T19:57:15.408684774+01:00",
+  "name": "code",
+  "publisher": {
+    "id": "qXCsqdX95tRyVlJUKTKESXEAuNRPfJob",
+    "username": "vscode",
+    "display-name": "Visual Studio Code",
+    "validation": "verified"
+  },
+  "developer": "vscode",
+  "status": "active",
+  "type": "app",
+  "base": "core20",
+  "version": "384ff738",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "172",
+  "confinement": "classic",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "code",
+      "name": "code",
+      "desktop-file": "/var/lib/snapd/desktop/applications/code_code.desktop",
+      "common-id": "code.desktop"
+    },
+    {
+      "snap": "code",
+      "name": "url-handler"
+    }
+  ],
+  "common-ids": [
+    "code.desktop"
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/code_172.snap",
+  "links": {
+    "contact": [
+      "https://twitter.com/code"
+    ],
+    "website": [
+      "https://code.visualstudio.com/"
+    ]
+  },
+  "contact": "https://twitter.com/code",
+  "website": "https://code.visualstudio.com/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2017/09/home-screenshot-linux.png",
+      "width": 617,
+      "height": 520
+    },
+    {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Sdg0ef2PpBw"
+    }
+  ]
+}

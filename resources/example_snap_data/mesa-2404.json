@@ -1,0 +1,56 @@
+{
+  "id": "HyhSEBPv3vHsW6uOHkQR384NgI7S6zpj",
+  "title": "mesa-2404",
+  "summary": "Mesa libraries for core24 snaps",
+  "description": "A content snap containing the mesa libraries and drivers for `base: core24` snaps.\n\nIt supports a broad range of hardware through the Mesa stack as well as Nvidia\ndrivers installed from your distribution through the native SnapD support.\n\nTo make use of this snap in your application, allowing for GPU acceleration on\na broader set of hardware without including the drivers in your snap, refer to the\ndocumentation below:\n\nhttps://mir-server.io/docs/the-gpu-2404-snap-interface\n\n_Note: On some, typically desktop, systems SnapD supports loading Nvidia drivers installed on the host. mesa-core22 is compatible with this._",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/04/logo_bO5tj2X.png",
+  "installed-size": 221761536,
+  "install-date": "2024-08-14T11:43:55.505314592+01:00",
+  "name": "mesa-2404",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core24",
+  "version": "24.0.9",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "143",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "license": "MIT",
+  "mounted-from": "/var/lib/snapd/snaps/mesa-2404_143.snap",
+  "links": {
+    "contact": [
+      "https://github.com/canonical/mesa-2404",
+      "https://matrix.to/#/#mir-server:matrix.org"
+    ],
+    "issues": [
+      "https://github.com/canonical/mesa-2404/issues"
+    ],
+    "source": [
+      "https://github.com/canonical/mesa-2404"
+    ],
+    "website": [
+      "https://mesa3d.org/"
+    ]
+  },
+  "contact": "https://github.com/canonical/mesa-2404",
+  "website": "https://mesa3d.org/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/04/logo_bO5tj2X.png",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "r4LxMVp7zWramXsJQAKdamxy6TAWlaDD",
+  "title": "Signal Desktop",
+  "summary": "Speak Freely - Private Messenger",
+  "description": "**Note: To use the Signal desktop app, you must first install Signal on your phone.**\n\nMillions of people use Signal every day for free and instantaneous communication anywhere in the world. Send and receive high-fidelity messages, participate in HD voice/video calls, and explore a growing set of new features that help you stay connected. Signal's advanced privacy-preserving technology is always enabled, so you can focus on sharing the moments that matter with the people who matter to you.\n\n- Say anything - State-of-the-art end-to-end encryption (powered by the open source Signal Protocol™) keeps your conversations secure. Privacy isn't an optional mode; it's just the way that Signal works. Every message, every call, every time.\n- Go fast - Messages are delivered quickly and reliably, even on slow networks. Signal is optimized to operate in the most constrained environment possible.\n- Feel free - Signal is a completely independent 501c3 nonprofit. Development is supported by users like you. No advertisements. No trackers. No kidding.\n- Be yourself - You can use your existing phone number and address book to securely communicate with your friends.\n- Speak up - Whether they live across town or across the ocean, Signal's enhanced audio and video quality will make your friends and family feel closer.\n- Whisper in the shadows - Switch to the dark theme if you refuse to see the light.\n\n**Minimize to tray**\n\nPer the request of the Signal developers, this snap does not use the system tray by default. This is disabled by default per the request of the Signal developers, because system tray support is not stable. Set to `false`, Signal will stop when you close it and will not have a system tray icon. You can enable it by running the following command.\n\n    snap set signal-desktop tray-icon=true\n\n\n**Are you having issues?**\n\nLet us know by creating a new issue here: https://github.com/snapcrafters/signal-desktop/issues\n\n**Authors**\n\nThis snap is maintained by the Snapcrafters community, and is not necessarily endorsed or officially maintained by the upstream developers.\n",
+  "icon": "/v2/icons/signal-desktop/icon",
+  "installed-size": 183234560,
+  "install-date": "2024-10-24T15:15:51.473676346+01:00",
+  "name": "signal-desktop",
+  "publisher": {
+    "id": "eEoV9TnaNkCzfJBu9SRhr2678vzyYV43",
+    "username": "snapcrafters",
+    "display-name": "Snapcrafters",
+    "validation": "starred"
+  },
+  "developer": "snapcrafters",
+  "status": "active",
+  "type": "app",
+  "base": "core24",
+  "version": "7.30.0",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "722",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "signal-desktop",
+      "name": "signal-desktop",
+      "desktop-file": "/var/lib/snapd/desktop/applications/signal-desktop_signal-desktop.desktop"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "mounted-from": "/var/lib/snapd/snaps/signal-desktop_722.snap",
+  "links": {
+    "contact": [
+      "https://github.com//snapcrafters/signal-desktop/issues"
+    ],
+    "issues": [
+      "https://github.com//snapcrafters/signal-desktop/issues"
+    ],
+    "source": [
+      "https://github.com//snapcrafters/signal-desktop"
+    ],
+    "website": [
+      "https://signal.org/"
+    ]
+  },
+  "contact": "https://github.com//snapcrafters/signal-desktop/issues",
+  "website": "https://signal.org/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2022/11/signal-logo.svg_8Yxi5gs.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2022/09/signal-desktop-screenshot.png",
+      "width": 804,
+      "height": 490
+    }
+  ]
+}

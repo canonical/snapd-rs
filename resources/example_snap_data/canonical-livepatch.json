@@ -1,0 +1,65 @@
+{
+  "id": "b96UJ4vttpNhpbaCWctVzfduQcPwQ5wn",
+  "title": "canonical-livepatch",
+  "summary": "Canonical Livepatch Client",
+  "description": "Canonical Livepatch patches high and critical linux kernel vulnerabilities removing the immediate need to reboot to upgrade the kernel, instead allowing the downtime to be scheduled. It is a part of the Ubuntu Pro offering.\n\nThe Canonical Livepatch Client is an application that runs on your machine and periodically checks for patches.\n\nSee our docs at https://ubuntu.com/security/livepatch/docs/livepatch",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2016/08/pictogram-upgrade-orange-hex.svg.png",
+  "installed-size": 11251712,
+  "install-date": "2024-10-13T12:23:49.777882388+01:00",
+  "name": "canonical-livepatch",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "10.9.0",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "286",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "canonical-livepatch",
+      "name": "canonical-livepatch"
+    },
+    {
+      "snap": "canonical-livepatch",
+      "name": "canonical-livepatchd",
+      "daemon": "simple",
+      "daemon-scope": "system",
+      "enabled": true,
+      "active": true
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/canonical-livepatch_286.snap",
+  "links": {
+    "contact": [
+      "mailto:snaps@canonical.com"
+    ],
+    "issues": [
+      "https://bugs.launchpad.net/canonical-livepatch-client/"
+    ],
+    "website": [
+      "http://www.ubuntu.com/livepatch"
+    ]
+  },
+  "contact": "mailto:snaps@canonical.com",
+  "website": "http://www.ubuntu.com/livepatch",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2016/08/pictogram-upgrade-orange-hex.svg.png",
+      "width": 256,
+      "height": 256
+    }
+  ]
+}

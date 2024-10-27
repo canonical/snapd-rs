@@ -1,0 +1,71 @@
+{
+  "id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV",
+  "title": "GNU Image Manipulation Program",
+  "summary": "GNU Image Manipulation Program",
+  "description": "Whether you are a graphic designer, photographer, illustrator, or scientist, GIMP provides you with sophisticated tools to get your job done. You can further enhance your productivity with GIMP thanks to many customization options and 3rd party plugins.\n\nThis snap is maintained by the Snapcrafters community, and is not necessarily endorsed or officially maintained by the upstream developers.\n\nUpstream Project: https://www.gimp.org/\nsnapcraft.yaml Build Definition: https://github.com/snapcrafters/gimp/blob/master/snap/snapcraft.yaml",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/07/gimp.png",
+  "installed-size": 540721152,
+  "install-date": "2024-05-12T07:59:03.778650408+01:00",
+  "name": "gimp",
+  "publisher": {
+    "id": "eEoV9TnaNkCzfJBu9SRhr2678vzyYV43",
+    "username": "snapcrafters",
+    "display-name": "Snapcrafters",
+    "validation": "starred"
+  },
+  "developer": "snapcrafters",
+  "status": "active",
+  "type": "app",
+  "base": "core20",
+  "version": "2.10.38",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "436",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "gimp",
+      "name": "gimp",
+      "desktop-file": "/var/lib/snapd/desktop/applications/gimp_gimp.desktop",
+      "common-id": "org.gimp.GIMP"
+    }
+  ],
+  "common-ids": [
+    "org.gimp.GIMP"
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/gimp_436.snap",
+  "links": {
+    "contact": [
+      "https://github.com/snapcrafters/gimp/issues"
+    ],
+    "website": [
+      "https://www.gimp.org/"
+    ]
+  },
+  "contact": "https://github.com/snapcrafters/gimp/issues",
+  "website": "https://www.gimp.org/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2017/07/gimp.png"
+    },
+    {
+      "type": "banner",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/10/gimp-splash-fs8.png",
+      "width": 1920,
+      "height": 640
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/05/Screenshot_from_2018-05-09_15-25-10.png"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/05/Screenshot_from_2018-05-09_15-24-36.png"
+    }
+  ]
+}

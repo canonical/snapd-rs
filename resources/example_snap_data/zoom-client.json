@@ -1,0 +1,85 @@
+{
+  "id": "76rrD7USwCJrZgepbRk7UdFEWON3tVKX",
+  "title": "zoom-client",
+  "summary": "ZOOM Cloud Meetings",
+  "description": "Video conferencing with real-time messaging and content sharing\n\nhttps://zoom.us provides simplified video conferencing, whiteboard sharing\nand messaging across any device. This is an unofficial re-pack of the debian\npackage provided by zoom.us\n",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/icon.png",
+  "installed-size": 406335488,
+  "install-date": "2024-10-22T14:57:37.361239183+01:00",
+  "name": "zoom-client",
+  "publisher": {
+    "id": "QfOqF7d2M1Pk2O0SbEKqTdB9Ry2aI0BP",
+    "username": "ogra",
+    "display-name": "Oliver Grawert",
+    "validation": "unproven"
+  },
+  "developer": "ogra",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "6.2.3.2056",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "242",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "zoom-client",
+      "name": "zoom-client",
+      "desktop-file": "/var/lib/snapd/desktop/applications/zoom-client_zoom-client.desktop"
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/zoom-client_242.snap",
+  "links": {
+    "contact": [
+      "mailto:ogra@ubuntu.com?subject=zoom-client"
+    ],
+    "website": [
+      "https://zoom.us"
+    ]
+  },
+  "contact": "mailto:ogra@ubuntu.com?subject=zoom-client",
+  "website": "https://zoom.us",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/icon.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/zoom-tray.png",
+      "width": 551,
+      "height": 965
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/zoom-perm.png",
+      "width": 1312,
+      "height": 909
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/zoom-login.png",
+      "width": 1786,
+      "height": 1174
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/zoom-account.png",
+      "width": 1774,
+      "height": 1162
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2020/03/zoom-settings.png",
+      "width": 2628,
+      "height": 1720
+    }
+  ]
+}

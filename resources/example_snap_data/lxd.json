@@ -1,0 +1,127 @@
+{
+  "id": "J60k4JY0HppjwOjW8dZdYc8obXKxujRu",
+  "title": "LXD",
+  "summary": "LXD - container and VM manager",
+  "description": "LXD is a system container and virtual machine manager.\n\nIt offers a simple CLI and REST API to manage local or remote instances,\nuses an image based workflow and support for a variety of advanced features.\n\nImages are available for all Ubuntu releases and architectures as well\nas for a wide number of other Linux distributions. Existing\nintegrations with many deployment and operation tools, makes it work\njust like a public cloud, except everything is under your control.\n\nLXD containers are lightweight, secure by default and a great\nalternative to virtual machines when running Linux on Linux.\n\nLXD virtual machines are modern and secure, using UEFI and secure-boot\nby default and a great choice when a different kernel or operating\nsystem is needed.\n\nWith clustering, up to 50 LXD servers can be easily joined and managed\ntogether with the same tools and APIs and without needing any external\ndependencies.\n\n\nSupported configuration options for the snap (snap set lxd [<key>=<value>...]):\n\n  - ceph.builtin: Use snap-specific Ceph configuration [default=false]\n  - ceph.external: Use the system's ceph tools (ignores ceph.builtin) [default=false]\n  - criu.enable: Enable experimental live-migration support [default=false]\n  - daemon.debug: Increase logging to debug level [default=false]\n  - daemon.group: Set group of users that have full control over LXD [default=lxd]\n  - daemon.user.group: Set group of users that have restricted LXD access [default=lxd]\n  - daemon.preseed: Pass a YAML configuration to `lxd init` on initial start\n  - daemon.syslog: Send LXD log events to syslog [default=false]\n  - daemon.verbose: Increase logging to verbose level [default=false]\n  - lvm.external: Use the system's LVM tools [default=false]\n  - lxcfs.pidfd: Start per-container process tracking [default=false]\n  - lxcfs.loadavg: Start tracking per-container load average [default=false]\n  - lxcfs.cfs: Consider CPU shares for CPU usage [default=false]\n  - lxcfs.debug: Increase logging to debug level [default=false]\n  - openvswitch.builtin: Run a snap-specific OVS daemon [default=false]\n  - openvswitch.external: Use the system's OVS tools (ignores openvswitch.builtin) [default=false]\n  - ovn.builtin: Use snap-specific OVN configuration [default=false]\n  - ui.enable: Enable the web interface [default=false]\n\nFor system-wide configuration of the CLI, place your configuration in\n/var/snap/lxd/common/global-conf/ (config.yml and servercerts)",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2023/07/lxd_tag.png",
+  "installed-size": 109248512,
+  "install-date": "2024-09-04T09:25:52.989765317+01:00",
+  "name": "lxd",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "5.21.2-2f4ba6b",
+  "channel": "5.21/stable",
+  "tracking-channel": "5.21/stable",
+  "ignore-validation": false,
+  "revision": "30131",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "lxd",
+      "name": "activate",
+      "daemon": "oneshot",
+      "daemon-scope": "system",
+      "enabled": true
+    },
+    {
+      "snap": "lxd",
+      "name": "buginfo"
+    },
+    {
+      "snap": "lxd",
+      "name": "check-kernel"
+    },
+    {
+      "snap": "lxd",
+      "name": "daemon",
+      "daemon": "simple",
+      "daemon-scope": "system",
+      "enabled": true,
+      "active": true,
+      "activators": [
+        {
+          "Name": "unix",
+          "Type": "socket",
+          "Active": true,
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "snap": "lxd",
+      "name": "lxc"
+    },
+    {
+      "snap": "lxd",
+      "name": "lxd"
+    },
+    {
+      "snap": "lxd",
+      "name": "user-daemon",
+      "daemon": "simple",
+      "daemon-scope": "system",
+      "enabled": true,
+      "activators": [
+        {
+          "Name": "unix",
+          "Type": "socket",
+          "Active": true,
+          "Enabled": true
+        }
+      ]
+    }
+  ],
+  "license": "AGPL-3.0",
+  "mounted-from": "/var/lib/snapd/snaps/lxd_30131.snap",
+  "links": {
+    "contact": [
+      "https://github.com/canonical/lxd/issues"
+    ],
+    "website": [
+      "https://ubuntu.com/lxd"
+    ]
+  },
+  "contact": "https://github.com/canonical/lxd/issues",
+  "website": "https://ubuntu.com/lxd",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/07/lxd_tag.png",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Screenshot_from_2018-10-26_12-57-24.png",
+      "width": 977,
+      "height": 592
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Screenshot_from_2018-10-26_14-20-14.png",
+      "width": 1003,
+      "height": 592
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Screenshot_from_2018-10-26_14-21-43.png",
+      "width": 1003,
+      "height": 592
+    },
+    {
+      "type": "video",
+      "url": "https://asciinema.org/a/226224"
+    }
+  ]
+}

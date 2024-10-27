@@ -1,0 +1,93 @@
+{
+  "id": "EI0D1KHjP8XiwMZKqSjuh6W8zvcowUVP",
+  "title": "firmware-updater",
+  "summary": "Firmware Updater",
+  "description": "Update Firmware",
+  "icon": "/v2/icons/firmware-updater/icon",
+  "installed-size": 11649024,
+  "install-date": "2024-10-15T12:17:25.232757399+01:00",
+  "name": "firmware-updater",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0+git.7983059",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable/ubuntu-24.04",
+  "ignore-validation": false,
+  "revision": "147",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "firmware-updater",
+      "name": "firmware-notifier",
+      "daemon": "simple",
+      "daemon-scope": "user",
+      "enabled": true,
+      "activators": [
+        {
+          "Name": "firmware-notifier",
+          "Type": "timer",
+          "Active": false,
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "snap": "firmware-updater",
+      "name": "firmware-updater",
+      "desktop-file": "/var/lib/snapd/desktop/applications/firmware-updater_firmware-updater.desktop"
+    },
+    {
+      "snap": "firmware-updater",
+      "name": "firmware-updater-app",
+      "desktop-file": "/var/lib/snapd/desktop/applications/firmware-updater_firmware-updater-app.desktop",
+      "daemon": "dbus",
+      "daemon-scope": "user",
+      "enabled": true,
+      "activators": [
+        {
+          "Name": "com.canonical.firmware_updater",
+          "Type": "dbus",
+          "Active": true,
+          "Enabled": true
+        }
+      ]
+    }
+  ],
+  "license": "GPL-3.0+",
+  "mounted-from": "/var/lib/snapd/snaps/firmware-updater_147.snap",
+  "links": {
+    "contact": [
+      "https://github.com/canonical/firmware-updater/"
+    ],
+    "website": [
+      "https://github.com/canonical/firmware-updater/"
+    ]
+  },
+  "contact": "https://github.com/canonical/firmware-updater/",
+  "website": "https://github.com/canonical/firmware-updater/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2022/01/system-component-firmware.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2022/02/firmware-updater.png",
+      "width": 752,
+      "height": 1275
+    }
+  ]
+}

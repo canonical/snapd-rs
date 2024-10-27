@@ -1,0 +1,34 @@
+{
+  "id": "lATO8HzwVvrAPrlZRAWpfyrJKlAJrZS3",
+  "summary": "Shared GNOME 42 Ubuntu stack",
+  "description": "This snap provides the GNOME 42 stack to other snaps that use it. It shares the base GNOME libraries and desktop integration components through the content interface. This helps reduce the size of snaps and helps developers to easily snap desktop applications.\n\n**For users**\n\nThis snap is automatically installed and removed when needed. **Manually adding or removing this snap is not recommended** and might break things.\n\n* If you are having issues with **snaps** using GNOME, please contact the experts on the Snapcraft forum: https://forum.snapcraft.io/\n* If you want to install the GNOME Desktop Environment, then you are in the wrong place. Please take a look at https://www.gnome.org/ for more information on how to get it.\n\n**For developers**\n\n* The `gnome` extension is the recommended way to use this in your own snap: https://snapcraft.io/docs/gnome-extension\n* You can report issues with this content snap on GitHub: https://github.com/ubuntu/gnome-sdk/issues\n* The source code of this snap is available on GitHub in the `gnome-42-2204` branch: https://github.com/ubuntu/gnome-sdk/tree/gnome-42-2204\n",
+  "installed-size": 529625088,
+  "install-date": "2024-04-24T11:51:30+01:00",
+  "name": "gnome-42-2204",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0+git.510a601",
+  "channel": "",
+  "tracking-channel": "latest/stable/ubuntu-24.04",
+  "ignore-validation": false,
+  "revision": "176",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/gnome-42-2204_176.snap",
+  "links": {
+    "contact": [
+      "https://github.com/ubuntu/gnome-sdk/issues"
+    ]
+  },
+  "contact": "https://github.com/ubuntu/gnome-sdk/issues"
+}

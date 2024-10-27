@@ -1,0 +1,58 @@
+{
+  "id": "IrwRHakqtzhFRHJOOPxKVPU0Kk7Erhcu",
+  "title": "snapd-desktop-integration",
+  "summary": "Desktop Integration for snapd",
+  "description": "Provides a user session daemon used to provide a bridge between the user's session and snapd.  Used for things like automatic theme installation.",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2023/07/snapd.png",
+  "installed-size": 581632,
+  "install-date": "2024-10-11T19:01:38.567565797+01:00",
+  "name": "snapd-desktop-integration",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0.9",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable/ubuntu-24.04",
+  "ignore-validation": false,
+  "revision": "253",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "snapd-desktop-integration",
+      "name": "snapd-desktop-integration",
+      "desktop-file": "/var/lib/snapd/desktop/applications/snapd-desktop-integration_snapd-desktop-integration.desktop",
+      "daemon": "simple",
+      "daemon-scope": "user",
+      "enabled": true
+    }
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/snapd-desktop-integration_253.snap",
+  "links": {
+    "contact": [
+      "https://github.com/snapcore/snapd-desktop-integration"
+    ],
+    "website": [
+      "https://github.com/snapcore/snapd-desktop-integration"
+    ]
+  },
+  "contact": "https://github.com/snapcore/snapd-desktop-integration",
+  "website": "https://github.com/snapcore/snapd-desktop-integration",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/07/snapd.png",
+      "width": 460,
+      "height": 460
+    }
+  ]
+}

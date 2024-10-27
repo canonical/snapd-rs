@@ -1,0 +1,139 @@
+{
+  "id": "CpUkI0qPIIBVRsjy49adNq4D6Ra72y4v",
+  "title": "libreoffice",
+  "summary": "LibreOffice is a free and open source office suite",
+  "description": "LibreOffice is a free and open source office suite, developed by The Document Foundation. The LibreOffice suite comprises programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae.",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2023/03/main.svg.png",
+  "installed-size": 1155858432,
+  "install-date": "2024-09-11T07:25:28.408324054+01:00",
+  "name": "libreoffice",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "24.2.6.2",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "326",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "libreoffice",
+      "name": "base",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_base.desktop",
+      "common-id": "libreoffice-base.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "calc",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_calc.desktop",
+      "common-id": "libreoffice-calc.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "draw",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_draw.desktop",
+      "common-id": "libreoffice-draw.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "filebug"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "impress",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_impress.desktop",
+      "common-id": "libreoffice-impress.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "libreoffice",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_libreoffice.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "math",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_math.desktop",
+      "common-id": "libreoffice-math.desktop"
+    },
+    {
+      "snap": "libreoffice",
+      "name": "writer",
+      "desktop-file": "/var/lib/snapd/desktop/applications/libreoffice_writer.desktop",
+      "common-id": "libreoffice-writer.desktop"
+    }
+  ],
+  "common-ids": [
+    "libreoffice-math.desktop",
+    "libreoffice-writer.desktop",
+    "libreoffice-base.desktop",
+    "libreoffice-calc.desktop",
+    "libreoffice-draw.desktop",
+    "libreoffice-impress.desktop"
+  ],
+  "mounted-from": "/var/lib/snapd/snaps/libreoffice_326.snap",
+  "links": {
+    "contact": [
+      "https://bugs.launchpad.net/ubuntu/+source/libreoffice/+bugs?field.tag=snap"
+    ],
+    "website": [
+      "https://github.com/ubuntu/libreoffice"
+    ]
+  },
+  "contact": "https://bugs.launchpad.net/ubuntu/+source/libreoffice/+bugs?field.tag=snap",
+  "website": "https://github.com/ubuntu/libreoffice",
+  "media": [
+    {
+      "type": "banner",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/12/LibreOffice-Banner_1IRAqHI.png",
+      "width": 2100,
+      "height": 700
+    },
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/03/main.svg.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/09/Screenshot-01-New-EN.png",
+      "width": 1082,
+      "height": 651
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/09/Screenshot-04-New-EN.png",
+      "width": 1080,
+      "height": 648
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/09/Screenshot-05-New-EN.png",
+      "width": 1080,
+      "height": 647
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/09/Screenshot-06-New-EN.png",
+      "width": 1080,
+      "height": 647
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2019/09/Screenshot-07-New-EN.png",
+      "width": 1081,
+      "height": 647
+    }
+  ]
+}

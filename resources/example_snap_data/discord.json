@@ -1,0 +1,92 @@
+{
+  "id": "qHVefGEBezeuCeSfTND40uoUD6GRw8BO",
+  "title": "Discord",
+  "summary": "Chat for Communities and Friends",
+  "description": "Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities.\n\nSnaps are confined, as such Discord may be unable to perform some of the tasks it typically does when unconfined. This may result in the system log getting spammed with apparmor errors. Granting access to the system-observe interface when in the snap will enable the features, and thus reduce the logging.\n\n  snap connect discord:system-observe\n\n**Authors**\n\nThis snap is maintained by the Snapcrafters community, and is not necessarily endorsed or officially maintained by the upstream developers.\n",
+  "icon": "/v2/icons/discord/icon",
+  "installed-size": 121114624,
+  "install-date": "2024-10-26T17:46:48.191485588+01:00",
+  "name": "discord",
+  "publisher": {
+    "id": "eEoV9TnaNkCzfJBu9SRhr2678vzyYV43",
+    "username": "snapcrafters",
+    "display-name": "Snapcrafters",
+    "validation": "starred"
+  },
+  "developer": "snapcrafters",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0.0.72",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "213",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "discord",
+      "name": "discord",
+      "desktop-file": "/var/lib/snapd/desktop/applications/discord_discord.desktop"
+    }
+  ],
+  "license": "Proprietary",
+  "mounted-from": "/var/lib/snapd/snaps/discord_213.snap",
+  "links": {
+    "contact": [
+      "https://github.com//snapcrafters/discord/issues"
+    ],
+    "issues": [
+      "https://github.com//snapcrafters/discord/issues"
+    ],
+    "source": [
+      "https://github.com//snapcrafters/discord"
+    ],
+    "website": [
+      "https://discord.com/"
+    ]
+  },
+  "contact": "https://github.com//snapcrafters/discord/issues",
+  "website": "https://discord.com/",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/com.discordapp.Discord_1.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/1_w9mjNHx.png",
+      "width": 1248,
+      "height": 702
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/2_nGC8n6L.png",
+      "width": 1248,
+      "height": 702
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/3_Uubi1ex.png",
+      "width": 1248,
+      "height": 702
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/4_ztrHo8d.png",
+      "width": 1248,
+      "height": 702
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2023/10/5_cSq3Jzb.png",
+      "width": 1248,
+      "height": 702
+    }
+  ]
+}

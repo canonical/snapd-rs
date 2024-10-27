@@ -1,0 +1,65 @@
+{
+  "id": "FppXWunWzuRT2NUT9CwoBPNJNZBYOCk0",
+  "title": "Security Center",
+  "summary": "The desktop Security Center will provide easy-to-access security features in Ubuntu.",
+  "description": "The desktop Security Center will provide easy-to-access security features in Ubuntu. \n\nIn this first release, users can enable experimental application permissions prompting for fine-grained control over how apps access files and folders.\n\nPermissions management requires the supporting `prompting-client` snap to be installed alongside; this is included by default on Ubuntu 24.10 and future releases. \n\nNew features will be added in coming releases.",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/08/Padlock.svg.png",
+  "installed-size": 12296192,
+  "install-date": "2024-10-23T07:54:34.846990694+01:00",
+  "name": "desktop-security-center",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "0+git.03421fb",
+  "channel": "1/edge",
+  "tracking-channel": "1/edge",
+  "ignore-validation": false,
+  "revision": "38",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "apps": [
+    {
+      "snap": "desktop-security-center",
+      "name": "desktop-security-center",
+      "desktop-file": "/var/lib/snapd/desktop/applications/desktop-security-center_desktop-security-center.desktop"
+    }
+  ],
+  "license": "GPL-3.0",
+  "mounted-from": "/var/lib/snapd/snaps/desktop-security-center_38.snap",
+  "links": {
+    "website": [
+      "https://github.com/canonical/desktop-security-center"
+    ]
+  },
+  "contact": "",
+  "website": "https://github.com/canonical/desktop-security-center",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/08/Padlock.svg.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/09/Security_Center_1-1726051348.png",
+      "width": 1808,
+      "height": 1408
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/09/Security_Center_2-1726051348.png",
+      "width": 1808,
+      "height": 1408
+    }
+  ]
+}

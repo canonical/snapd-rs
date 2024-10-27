@@ -1,0 +1,39 @@
+{
+  "id": "JWD4nJLiCdHrZWKOWlzGbh0cv0omRmDj",
+  "title": "gaming-graphics-core22",
+  "summary": "Shared Mesa stack for gaming",
+  "description": "Graphics libraries useful for gaming platforms like Steam",
+  "installed-size": 202350592,
+  "install-date": "2024-10-08T10:07:05.41091281+01:00",
+  "name": "gaming-graphics-core22",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "app",
+  "base": "core22",
+  "version": "24.2.3~kisak1~j",
+  "channel": "kisak-fresh/stable",
+  "tracking-channel": "kisak-fresh/stable",
+  "ignore-validation": false,
+  "revision": "184",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/gaming-graphics-core22_184.snap",
+  "links": {
+    "contact": [
+      "https://github.com/canonical/gaming-graphics"
+    ],
+    "website": [
+      "https://github.com/canonical/gaming-graphics"
+    ]
+  },
+  "contact": "https://github.com/canonical/gaming-graphics",
+  "website": "https://github.com/canonical/gaming-graphics"
+}

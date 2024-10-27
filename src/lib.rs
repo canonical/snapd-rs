@@ -152,7 +152,7 @@ where
         }
     }
 
-    pub async fn install_snaps(&self, snaps: Vec<String>, classic: bool) -> Result<String> {
+    pub async fn install_snaps(&self, snaps: Vec<String>, classic: bool) -> Result<ChangeId> {
         let payload = Payload {
             action: "refresh",
             snaps,
@@ -187,14 +187,16 @@ where
         #[derive(Debug, Serialize)]
         struct Payload {
             action: &'static str,
-            purge: bool
+            purge: bool,
         }
     }
 
     pub async fn change_status(&self, change_id: &ChangeId) -> Result<ChangeStatus> {
-        self.client.get_json(&format!("changes/{}", change_id.change)).await
+        self.client
+            .get_json(&format!("changes/{}", change_id.change))
+            .await
     }
-        
+
     pub async fn find(&self, query: FindQuery) -> Result<Vec<Snap>> {
         let query = serde_urlencoded::to_string(query)?;
 
@@ -232,9 +234,9 @@ where
     D: Deserializer<'de>,
 {
     let raw: Raw = Deserialize::deserialize(de)?;
-    
+
     return Ok(raw.snap_names);
-    
+
     // Serde structs
     #[derive(Debug, Deserialize)]
     #[serde(rename_all = "kebab-case")]
@@ -252,7 +254,7 @@ pub struct SnapdTask {
     pub summary: Option<String>,
     pub status: Option<String>,
     #[serde(default)]
-    pub progress: TaskProgress
+    pub progress: TaskProgress,
 }
 
 #[derive(Debug, Default, Clone, Deserialize, Serialize)]
@@ -396,4 +398,17 @@ pub struct FindQuery {
     pub filter: Option<FindFilter>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub wide_scope: Option<FindScope>,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use simple_test_case::dir_cases;
+
+    #[dir_cases("resources/example_snap_data")]
+    #[test]
+    fn snap_data_parsing(_: &str, content: &str) {
+        let res = serde_json::from_str::<Snap>(content);
+        assert!(res.is_ok())
+    }
 }

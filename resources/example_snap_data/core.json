@@ -1,0 +1,68 @@
+{
+  "id": "99T7MUlRhtI3U0QFgl5mXXESAiSwt776",
+  "title": "Core base snap",
+  "summary": "Snap runtime environment",
+  "description": "Base snaps are a specific type of snap that include libraries and dependencies common to many applications. They provide a consistent and reliable execution environment for the snap packages that use them.\n\nThis core base snap additionally includes the snapd binaries, which in later releases are installed separately as the snapd snap. For more details on the snapd snap, see https://snapcraft.io/snapd.\n\nThe core base snap provides a runtime environment based on Ubuntu 18.04 LTS (Xenial Xerus).\n\nOther Ubuntu environment base snaps include:\n-   Core 20: <https://snapcraft.io/core20>\n-   Core 22: <https://snapcraft.io/core22> \n-   Core 24: <https://snapcraft.io/core24>\n\n**Using a base snap**\n\nBase snaps are installed automatically when a snap package requires them. Only one of each type of base snap is ever installed.\n\nManually removing a base snap may affect the stability of your system.\n\n**Building snaps with core**\n\nSnap developers can use this base in their own snaps by adding the following to the snap's snapcraft.yaml:\n\n    base: core\n\n**Additional Information***\n\nFor more details, and guidance on using base snaps, see our documentation: <https://snapcraft.io/docs/base-snaps>",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large_JNhwVKU.png",
+  "installed-size": 109252608,
+  "install-date": "2024-06-26T13:56:34.91910774+01:00",
+  "name": "core",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "os",
+  "version": "16-2.61.4-20240607",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "17200",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/core_17200.snap",
+  "links": {
+    "issues": [
+      "https://github.com/snapcore/core/issues"
+    ],
+    "source": [
+      "https://github.com/snapcore/core"
+    ],
+    "website": [
+      "https://snapcraft.io"
+    ]
+  },
+  "contact": "",
+  "website": "https://snapcraft.io",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large_JNhwVKU.png",
+      "width": 498,
+      "height": 498
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-01-1718731991.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-02-1718731991.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-03-1718731991.png",
+      "width": 568,
+      "height": 932
+    }
+  ]
+}

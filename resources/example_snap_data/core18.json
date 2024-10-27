@@ -1,0 +1,68 @@
+{
+  "id": "CSO04Jhav2yK0uz97cr0ipQRyqg0qQL6",
+  "title": "Core 18 base snap",
+  "summary": "Snap runtime environment",
+  "description": "Base snaps are a specific type of snap that include libraries and dependencies common to many applications. They provide a consistent and reliable execution environment for the snap packages that use them.\n\nThe core18 base snap provides a runtime environment based on Ubuntu 18.04 LTS (Bionic Beaver).\n\nOther Ubuntu environment base snaps include:\n-   Core 20: <https://snapcraft.io/core20>\n-   Core 22: <https://snapcraft.io/core22> \n-   Core 24: <https://snapcraft.io/core24>\n\n**Using a base snap**\n\nBase snaps are installed automatically when a snap package requires them. Only one of each type of base snap is ever installed.\n\nManually removing a base snap may affect the stability of your system.\n\n**Building snaps with core18**\n\nSnap developers can use this base in their own snaps by adding the following to the snap's snapcraft.yaml:\n\n    base: core18\n\n**Additional Information***\n\nFor more details, and guidance on using base snaps, see our documentation: <https://snapcraft.io/docs/base-snaps>",
+  "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large.png",
+  "installed-size": 58052608,
+  "install-date": "2024-10-08T10:06:57.255972732+01:00",
+  "name": "core18",
+  "publisher": {
+    "id": "canonical",
+    "username": "canonical",
+    "display-name": "Canonical",
+    "validation": "verified"
+  },
+  "developer": "canonical",
+  "status": "active",
+  "type": "base",
+  "version": "20240920",
+  "channel": "latest/stable",
+  "tracking-channel": "latest/stable",
+  "ignore-validation": false,
+  "revision": "2846",
+  "confinement": "strict",
+  "private": false,
+  "devmode": false,
+  "jailmode": false,
+  "mounted-from": "/var/lib/snapd/snaps/core18_2846.snap",
+  "links": {
+    "contact": [
+      "https://github.com/snapcore/core18/issues"
+    ],
+    "source": [
+      "https://github.com/snapcore/core18"
+    ],
+    "website": [
+      "https://snapcraft.io"
+    ]
+  },
+  "contact": "https://github.com/snapcore/core18/issues",
+  "website": "https://snapcraft.io",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-icon-large.png",
+      "width": 498,
+      "height": 498
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-01-1718723969.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-02-1718723969.png",
+      "width": 568,
+      "height": 932
+    },
+    {
+      "type": "screenshot",
+      "url": "https://dashboard.snapcraft.io/site_media/appmedia/2024/06/core-03-1718723969.png",
+      "width": 568,
+      "height": 932
+    }
+  ]
+}
