@@ -126,6 +126,19 @@ impl<C> SnapdClient<C>
 where
     C: Client,
 {
+    /// Fetches a list of installed snaps from the snapd daemon.
+    ///
+    /// # Arguments
+    ///
+    /// * `filter` - An optional filter to apply to the list of snaps,
+    ///   such as returning only enabled snaps. If `None`, it defaults to a
+    ///   standard selection.
+    ///
+    /// # Errors
+    ///
+    /// Returns an `Error` if the communication with the snapd socket fails or
+    /// if the response cannot be parsed.
+    
     pub async fn installed_snaps(&self, filter: Option<SnapsFilter>) -> Result<Vec<Snap>> {
         let mut uri = "snaps".to_owned();
         if let Some(filter) = filter {
