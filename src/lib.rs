@@ -1,4 +1,5 @@
 use crate::{response::parse_response, socket_client::UnixSocketClient};
+use async_trait::async_trait;
 use chrono::{DateTime, Utc};
 use hyper::{StatusCode, Uri};
 use serde::{de::DeserializeOwned, Deserialize, Deserializer, Serialize};
@@ -16,19 +17,14 @@ const SNAPD_SNAP_SOCKET: &str = "/run/snapd-snap.socket";
 pub enum Error {
     #[error(transparent)]
     Hyper(#[from] hyper::Error),
-
     #[error(transparent)]
     HyperHttp(#[from] hyper::http::Error),
-
     #[error(transparent)]
     Io(#[from] std::io::Error),
-
     #[error(transparent)]
     Json(#[from] serde_json::Error),
-
     #[error("{uri} is not valid: {reason}")]
     InvalidUri { reason: &'static str, uri: String },
-
     #[error("error message returned from snapd: {message}")]
     SnapdError {
         status: StatusCode,
@@ -36,7 +32,6 @@ pub enum Error {
         kind: Option<String>,
         value: Option<serde_json::Value>,
     },
-
     #[error(transparent)]
     UrlEncoded(#[from] serde_urlencoded::ser::Error),
 }
@@ -45,49 +40,46 @@ pub type Result<T> = std::result::Result<T, Error>;
 
 /// Abstraction layer to make swapping out the underlying client possible for
 /// testing.
-#[allow(async_fn_in_trait)]
+#[async_trait]
 pub trait Client {
     async fn get_json<T>(&self, path: &str) -> Result<T>
     where
-        T: DeserializeOwned;
+        T: DeserializeOwned + Send;
 
     async fn post_json<T, U>(&self, path: &str, body: U) -> Result<T>
     where
-        T: DeserializeOwned,
-        U: Serialize;
+        T: DeserializeOwned + Send,
+        U: Serialize + Send;
 }
 
+fn build_uri(path: &str) -> Result<Uri> {
+    let s = format!("{SNAPD_BASE_URI}/{path}");
+    Uri::from_str(&s).map_err(|_| Error::InvalidUri {
+        reason: "malformed",
+        uri: s,
+    })
+}
+
+#[async_trait]
 impl Client for UnixSocketClient {
     async fn get_json<T>(&self, path: &str) -> Result<T>
     where
-        T: DeserializeOwned,
+        T: DeserializeOwned + Send,
     {
-        let s = format!("{SNAPD_BASE_URI}/{path}");
-        let uri = Uri::from_str(&s).map_err(|_| Error::InvalidUri {
-            reason: "malformed",
-            uri: s,
-        })?;
-
+        let uri = build_uri(path)?;
         let res = self.get(uri).await?;
-
         parse_response(res).await
     }
 
     async fn post_json<T, U>(&self, path: &str, body: U) -> Result<T>
     where
-        T: DeserializeOwned,
-        U: Serialize,
+        T: DeserializeOwned + Send,
+        U: Serialize + Send,
     {
-        let s = format!("{SNAPD_BASE_URI}/{path}");
-        let uri = Uri::from_str(&s).map_err(|_| Error::InvalidUri {
-            reason: "malformed",
-            uri: s,
-        })?;
-
+        let uri = build_uri(path)?;
         let res = self
             .post(uri, "application/json", serde_json::to_vec(&body)?)
             .await?;
-
         parse_response(res).await
     }
 }
@@ -122,16 +114,30 @@ impl SnapdSocketClient {
     }
 }
 
+// Payloads for serialization, kept private to the module.
+#[derive(Debug, Serialize)]
+struct InstallPayload {
+    action: &'static str,
+    snaps: Vec<String>,
+    classic: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct UninstallPayload {
+    action: &'static str,
+    purge: bool,
+}
+
 impl<C> SnapdClient<C>
 where
     C: Client,
 {
     pub async fn installed_snaps(&self, filter: Option<SnapsFilter>) -> Result<Vec<Snap>> {
-        let mut uri = "snaps".to_owned();
-        if let Some(filter) = filter {
-            uri.push_str(&format!("?select={}", filter.kebab_case()));
-        }
-
+        let uri = if let Some(filter) = filter {
+            format!("snaps?select={}", filter.kebab_case())
+        } else {
+            "snaps".to_owned()
+        };
         self.client.get_json(&uri).await
     }
 
@@ -140,55 +146,31 @@ where
     }
 
     pub async fn snap_categories(&self) -> Result<Vec<String>> {
-        let res: Vec<Category> = self.client.get_json("categories").await?;
-
-        return Ok(res.into_iter().map(|c| c.name).collect());
-
-        // Serde structs
-
         #[derive(Debug, Deserialize)]
         struct Category {
             name: String,
         }
+        let res: Vec<Category> = self.client.get_json("categories").await?;
+        Ok(res.into_iter().map(|c| c.name).collect())
     }
 
     pub async fn install_snaps(&self, snaps: Vec<String>, classic: bool) -> Result<ChangeId> {
-        let payload = Payload {
+        let payload = InstallPayload {
             action: "refresh",
             snaps,
             classic,
         };
-
-        return self.client.post_json("snaps", payload).await;
-
-        // Serde structs
-
-        #[derive(Debug, Serialize)]
-        struct Payload {
-            action: &'static str,
-            snaps: Vec<String>,
-            classic: bool,
-        }
+        self.client.post_json("snaps", payload).await
     }
 
     pub async fn uninstall_snap(&self, snap: &str, purge: bool) -> Result<ChangeId> {
-        let payload = Payload {
+        let payload = UninstallPayload {
             action: "remove",
             purge,
         };
-
-        return self
-            .client
+        self.client
             .post_json(&format!("snaps/{snap}"), payload)
-            .await;
-
-        // Serde structs
-
-        #[derive(Debug, Serialize)]
-        struct Payload {
-            action: &'static str,
-            purge: bool,
-        }
+            .await
     }
 
     pub async fn change_status(&self, change_id: &ChangeId) -> Result<ChangeStatus> {
@@ -199,7 +181,6 @@ where
 
     pub async fn find(&self, query: FindQuery) -> Result<Vec<Snap>> {
         let query = serde_urlencoded::to_string(query)?;
-
         self.client.get_json(&format!("find?{query}")).await
     }
 }
@@ -233,16 +214,13 @@ fn snap_names<'de, D>(de: D) -> std::result::Result<Vec<String>, D::Error>
 where
     D: Deserializer<'de>,
 {
-    let raw: Raw = Deserialize::deserialize(de)?;
-
-    return Ok(raw.snap_names);
-
-    // Serde structs
     #[derive(Debug, Deserialize)]
     #[serde(rename_all = "kebab-case")]
     struct Raw {
         snap_names: Vec<String>,
     }
+    let raw: Raw = Deserialize::deserialize(de)?;
+    Ok(raw.snap_names)
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -411,4 +389,4 @@ mod tests {
         let res = serde_json::from_str::<Snap>(content);
         assert!(res.is_ok())
     }
-}
+} 
